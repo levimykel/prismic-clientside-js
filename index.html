@@ -16,7 +16,7 @@
       $( document ).ready(function() {
         var Prismic = PrismicJS;
         
-        Prismic.getApi("https://your-repo-name.prismic.io/api/v2").then(function(api) {
+        Prismic.getApi("https://levi-quickstart-php.prismic.io/api/v2").then(function(api) {
           return api.getByUID('page', 'get-started');
         }).then(function(document) {
           $('#image').attr("src", document.data.image.url);
